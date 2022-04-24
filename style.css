@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fjalla One', sans-serif;
+}
+.header{
+    background: radial-gradient(rgb(94, 161, 152),rgb(199, 122, 122));
+}
+.header .row{
+    margin-top: 60px;}
+
+
+.Container{
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    
+}
+nav{
+    flex: 1;
+    text-align: right;
+    
+}
+
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+a{
+    text-decoration: none;
+    transition: all 0.5s;
+    
+}
+a:hover{
+    color: rgb(12, 11, 12);
+    
+    cursor: pointer;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.col-1{
+    flex-basis: 50%;
+    min-width: 290px;
+
+}
+.col-1 h2{
+    font-size: 45px;
+    line-height: 55px;
+    margin: 20px 0;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+    
+     
+}
+.button{
+    display: inline-block;
+    background-color:rgb(247, 4, 166);
+    color: aqua;
+    padding: 10px 25px;
+    margin: 25px 0;
+    border-radius: 30px;
+    transition: all 0.6s;
+}
+.button:hover{
+    color: rgb(8, 8, 8);
+    background-color: rgb(102, 182, 10);
+}
+.categories{
+    margin: 65px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 230px;
+    margin-bottom: 25px;
+}
+.col-3 img{
+    width: 100%;}
+.scontainer{
+    max-width: 1100px;
+    margin:auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 190px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 70px;
+    position: relative;
+    line-height: 60px;
+    color: red;
+
+    
+}
+.title::after{
+    content:'';
+    background: rgb(173, 23, 161);
+    width: 75px;
+    height: 6px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: brown;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: small;
+
+}
+.rating{
+    color: rgb(16, 118, 165);
+}
+.col-4:hover{
+    transform: translateY(-10px);
+}
+.offer{
+    background: radial-gradient(rgb(94, 161, 152),rgb(199, 122, 122));
+    margin-top: 80;
+    padding: 25px 0;
+}
+.col2 .offer-img{
+    padding: 50px;
+    width: 350px;
+   
+}
+p{
+    color: rgb(4, 3, 3);
+    font-size: 15px;
+}
+
+
+/*--user review--*/
+.UserReviews{
+    padding-top: 90px;
+}
+.UserReviews .col-3{
+    text-align: center;
+    padding: 40px 19px;
+    cursor: pointer;
+    transition: transform 0.6s;
+}
+.UserReviews .col-3 img{
+    width: 45px;
+    margin-top: 18px;
+    border-radius: 45px;
+}
+.UserReviews .col-3:hover{
+    transform: translateY(-15.5px);
+}
+.fa.fa-quote-left{
+    color: rgb(38, 121, 168);
+}
+
+/* companies*/
+
+.Comapnies{
+    margin: 100px auto;
+}
+.col-5{
+    width: 150px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: hue-rotate(100%);
+    transition: all 0.5s;
+
+}
+.col-5 img:hover{
+    filter: grayscale(100%);
+    transform: translateY(25px)
+    
+}
+/*footer*/
+.footer{
+    background: black;
+    color: wheat;
+    font-size: 12px;
+    padding: 50px 0 20px;
+}
+small{
+    color: white;
+}
+.footer-col1, .footer-col2, .footer-col3{
+    min-width: 220px;
+    margin-bottom: 18px;
+
+}
+.footer-col1{
+    flex-basis: 30%;
+}
+
+.footer-col2 img{
+    width: 70px;
+    margin-right: 110px;
+    margin-bottom: 18px;
+    border-radius: 150px;
+}
+.footer-col3{
+    flex-basis: 11%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.footer hr{
+    border: none;
+    background: rgb(239, 237, 237);
+    height: 1px;
+    margin: 18px 0;
+}
+.copyright{
+    text-align: center;
+}
+h5{
+    color: rgb(240, 15, 68);
+    font-weight: lighter;
+}
+h4{
+    padding: 5px 0;
+}
+.menu-icon{
+    width: 25px;
+    margin-left: 20px;
+}
+/* Query for menu*
+  
+@media only screen and (min-width:600px) {
+
+    nav ul{
+        position: absolute;
+        max-width:500px;
+        top: 70px;
+        left: 0;
+        background: black;
+        
+    }
+    nav ul li{
+        display:block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;}
+    nav ul li a{
+        color:white;}
+    
+    
+}*/
+
+/*media for less than 600 screen size*/
+
+@media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+    .col-1,.col-2,.col-3,.col-4,.col-5{
+        flex-basis: 100%;
+    }
+}
